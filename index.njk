@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ chapter.name }} - USA Dance Chapter</title>
+  <link rel="stylesheet" href="/assets/styles.css"/>
+</head>
+<body>
+  <header>
+    <img src="/assets/logo.png" alt="USA Dance Logo" class="logo"/>
+    <h1>{{ chapter.name }} Chapter</h1>
+    <p>{{ chapter.city }}, {{ chapter.state }}</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Board</a></li>
+      <li><a href="https://usadance.org">National Website</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h2>Welcome!</h2>
+      <p>{{ chapter.welcomeMessage }}</p>
+    </section>
+    <section>
+      <h2>Upcoming Events</h2>
+      <ul>
+        {% for event in events %}
+        <li><strong>{{ event.date }}</strong> - {{ event.name }} at {{ event.location }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    <section>
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:{{ chapter.email }}">{{ chapter.email }}</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; {{ currentYear }} USA Dance - {{ chapter.name }} Chapter</p>
+  </footer>
+</body>
+</html>
