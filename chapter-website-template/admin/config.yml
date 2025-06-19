@@ -1,0 +1,33 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "chapter"
+    label: "Chapter Info"
+    files:
+      - file: "content/chapter.json"
+        label: "Chapter Info"
+        name: "chapter"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "City", name: "city", widget: "string"}
+          - {label: "State", name: "state", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Welcome Message", name: "welcomeMessage", widget: "text"}
+
+  - name: "events"
+    label: "Events"
+    files:
+      - file: "content/events.json"
+        label: "Events"
+        name: "events"
+        fields:
+          - {label: "Events", name: "", widget: "list", fields: [
+              {label: "Date", name: "date", widget: "datetime"},
+              {label: "Name", name: "name", widget: "string"},
+              {label: "Location", name: "location", widget: "string"}
+            ]}
