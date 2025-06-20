@@ -11,7 +11,14 @@ permalink: /events/index.html
         <img src="{{ event.image }}" alt="{{ event.title }} flyer" />
       {% endif %}
       <h3><a href="/events/{{ event.slug }}">{{ event.title }}</a></h3>
-      <p><strong>{{ event.date | slice(0, 10) }}</strong> at {{ event.location }}</p>
+      <p><strong>{{ event.date | prettyDate }}</strong> at {{ event.location }}</p>
     </div>
   {% endfor %}
 </div>
+
+<h2>Calendar View</h2>
+<ul class="calendar-list">
+  {% for event in collections.events %}
+    <li><strong>{{ event.date | prettyDate }}</strong> - <a href="/events/{{ event.slug }}">{{ event.title }}</a></li>
+  {% endfor %}
+</ul>

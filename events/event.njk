@@ -11,6 +11,14 @@ permalink: "events/{{ event.slug }}/index.html"
 {% if event.image %}
   <img src="{{ event.image }}" alt="{{ event.title }} flyer" class="event-flyer">
 {% endif %}
-<p><strong>Date:</strong> {{ event.date | slice(0, 10) }}</p>
+<p><strong>Date:</strong> {{ event.date | prettyDate }}</p>
 <p><strong>Location:</strong> {{ event.location }}</p>
 <p>{{ event.description }}</p>
+
+<h3>RSVP</h3>
+<form name="rsvp" method="POST" data-netlify="true">
+  <input type="hidden" name="event" value="{{ event.title }}" />
+  <p><label>Your Name: <input type="text" name="name" required></label></p>
+  <p><label>Email: <input type="email" name="email" required></label></p>
+  <p><button type="submit">Submit RSVP</button></p>
+</form>
