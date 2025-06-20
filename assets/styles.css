@@ -1,1 +1,79 @@
-/* Keep same styles from earlier clean design, omitted for brevity */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f4;
+  color: #333;
+}
+header {
+  background: linear-gradient(to right, #7ac8f5, #f7f7fa);
+  border-bottom: 3px solid #90c5eb;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.logo {
+  height: 80px;
+  margin-right: 20px;
+}
+nav ul {
+  list-style-type: none;
+  background-color: #1d3557;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav li {
+  flex: 1;
+}
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: #457b9d;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+main h2 {
+  border-bottom: 2px solid #90c5eb;
+  padding-bottom: 5px;
+}
+footer {
+  background-color: #f0f0f5;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.event-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+.event-card img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.event-flyer {
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
