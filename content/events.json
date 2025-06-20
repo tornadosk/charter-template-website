@@ -5,14 +5,16 @@
       "slug": "summer-social-dance",
       "date": "2025-07-13T00:00:00.000Z",
       "location": "Cambridge Studio",
-      "description": "Join us for a summer-themed social dance party with light refreshments and great music!"
+      "description": "Join us for a summer-themed social dance party with refreshments and great music!",
+      "image": "/assets/uploads/summer-flyer.jpg"
     },
     {
       "title": "Waltz Workshop",
       "slug": "waltz-workshop",
       "date": "2025-08-10T00:00:00.000Z",
       "location": "Downtown Ballroom",
-      "description": "Improve your American Waltz with detailed technique and fun partner drills."
+      "description": "Master your Waltz technique and styling in this focused training session.",
+      "image": "/assets/uploads/waltz-workshop.jpg"
     }
   ]
 }

@@ -8,6 +8,9 @@ pagination:
 permalink: "events/{{ event.slug }}/index.html"
 ---
 <h2>{{ event.title }}</h2>
+{% if event.image %}
+  <img src="{{ event.image }}" alt="{{ event.title }} flyer" class="event-flyer">
+{% endif %}
 <p><strong>Date:</strong> {{ event.date | slice(0, 10) }}</p>
 <p><strong>Location:</strong> {{ event.location }}</p>
 <p>{{ event.description }}</p>
