@@ -1,23 +1,28 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("admin");
 
-  // Dynamic event loader for folder-based JSON
-  eleventyConfig.addCollection("events", function () {
-    const eventFiles = fs.readdirSync("./content/events");
-    return eventFiles.map(file => {
-      const data = JSON.parse(fs.readFileSync(`./content/events/${file}`));
-      return data;
+  eleventyConfig.addCollection("events", () => {
+    const files = fs.readdirSync("./content/events");
+
+    return files.map((filename) => {
+      const fullPath = `./content/events/${filename}`;
+      const event = JSON.parse(fs.readFileSync(fullPath));
+
+      return {
+        ...event,
+        date: event.date ?? "", // ensure it's a string
+      };
     });
   });
 
   return {
     dir: {
       input: ".",
-      output: "_site"
-    }
+      output: "_site",
+    },
   };
 };
