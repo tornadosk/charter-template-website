@@ -1,4 +1,3 @@
-/* Reuse previous design + minor calendar/rsvp enhancements */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fff8f4;
@@ -6,9 +5,25 @@ body {
   margin: 0;
   padding: 0;
 }
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em;
+}
 header {
   background: linear-gradient(to right, #7ac8f5, #f7f7fa);
   border-bottom: 3px solid #90c5eb;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.logo {
+  height: 70px;
+}
+.chapter-title h1 {
+  margin: 0;
 }
 nav ul {
   list-style: none;
@@ -23,7 +38,11 @@ nav li a {
   color: white;
   text-decoration: none;
 }
-.event-list { display: flex; flex-wrap: wrap; gap: 20px; }
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 .event-card {
   background: #fff;
   padding: 10px;
@@ -31,8 +50,26 @@ nav li a {
   border-radius: 10px;
   box-shadow: 0 0 6px rgba(0,0,0,0.1);
 }
-.event-card img { max-width: 100%; border-radius: 6px; }
-.event-flyer { max-width: 100%; border-radius: 10px; margin-bottom: 10px; }
-form input, form button { padding: 0.5em; font-size: 1em; }
-form p { margin-bottom: 1em; }
-.calendar-list { padding-left: 20px; }
+.event-card img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+.event-flyer {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+form input, form button {
+  padding: 0.5em;
+  font-size: 1em;
+}
+form p {
+  margin-bottom: 1em;
+}
+.calendar-list {
+  padding-left: 20px;
+}
+.board-list {
+  padding-left: 20px;
+  line-height: 1.6;
+}
