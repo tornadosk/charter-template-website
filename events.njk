@@ -5,13 +5,13 @@ permalink: /events/index.html
 ---
 <h2>Upcoming Events</h2>
 <div class="event-list">
-  {% for event in collections.events %}
+  {% for event in events %}
     <div class="event-card">
       {% if event.image %}
         <img src="{{ event.image }}" alt="{{ event.title }} flyer" />
       {% endif %}
       <h3><a href="/events/{{ event.slug }}">{{ event.title }}</a></h3>
-      <p><strong>Date:</strong> {{ event.date | date("yyyy-MM-dd") }} at {{ event.location }}</p>
+      <p><strong>{{ event.date | slice(0, 10) }}</strong> at {{ event.location }}</p>
     </div>
   {% endfor %}
 </div>
