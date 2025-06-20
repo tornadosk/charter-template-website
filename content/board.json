@@ -1,7 +1,16 @@
 {
   "members": [
-    { "name": "John Smith", "role": "President" },
-    { "name": "Jane Doe", "role": "Vice President" },
-    { "name": "Susan Lee", "role": "Treasurer" }
+    {
+      "name": "John Smith",
+      "role": "President"
+    },
+    {
+      "name": "Aleh Kulyba",
+      "role": "Vice President"
+    },
+    {
+      "name": "Susan Lee",
+      "role": "Treasurer"
+    }
   ]
 }
