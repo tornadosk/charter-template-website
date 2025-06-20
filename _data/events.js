@@ -1,1 +1,1 @@
-module.exports = require('../content/events.json').events;
+module.exports = require('../content/events.json');

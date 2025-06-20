@@ -20,17 +20,17 @@ collections:
           - {label: "Welcome Message", name: "welcomeMessage", widget: "text"}
   - name: "events"
     label: "Events"
-    files:
-      - file: "content/events.json"
-        label: "Events"
-        name: "events"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Slug", name: "slug", widget: "string"}
-          - {label: "Date", name: "date", widget: "datetime"}
-          - {label: "Location", name: "location", widget: "string"}
-          - {label: "Description", name: "description", widget: "text"}
-          - {label: "Image", name: "image", widget: "image"}
+    file: "content/events.json"
+    label_singular: "Event"
+    name: "events"
+    widget: "list"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image"}
   - name: "board"
     label: "Board"
     files:

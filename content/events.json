@@ -1,26 +1,18 @@
-{
-  "events": [
-    {
-      "title": "Summer Social Dance",
-      "slug": "summer-social-dance",
-      "date": "2025-07-13T00:00:00.000Z",
-      "location": "Cambridge Studio",
-      "description": "Join us for a summer-themed social dance party with refreshments and great music!",
-      "image": "/assets/uploads/summer-flyer.jpg"
-    },
-    {
-      "title": "Waltz Workshop",
-      "slug": "waltz-workshop",
-      "date": "2025-08-10T00:00:00.000Z",
-      "location": "Downtown Ballroom",
-      "description": "Master your Waltz technique and styling in this focused training session.",
-      "image": "/assets/uploads/waltz-workshop.jpg"
-    }
-  ],
-  "date": "2025-06-20T05:56:23.407Z",
-  "title": "123",
-  "slug": "123",
-  "location": "123",
-  "description": "213123",
-  "image": "/assets/uploads/excelsiorcamptest1.png"
-}
+[
+  {
+    "title": "Summer Social Dance",
+    "slug": "summer-social-dance",
+    "date": "2025-07-13T00:00:00.000Z",
+    "location": "Cambridge Studio",
+    "description": "Join us for a summer-themed social dance party with refreshments and great music!",
+    "image": "/assets/uploads/summer-flyer.jpg"
+  },
+  {
+    "title": "Waltz Workshop",
+    "slug": "waltz-workshop",
+    "date": "2025-08-10T00:00:00.000Z",
+    "location": "Downtown Ballroom",
+    "description": "Master your Waltz technique and styling in this focused training session.",
+    "image": "/assets/uploads/waltz-workshop.jpg"
+  }
+]
