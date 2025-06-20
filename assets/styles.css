@@ -5,71 +5,112 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 1em;
 }
+
 header {
   background: linear-gradient(to right, #7ac8f5, #f7f7fa);
   border-bottom: 3px solid #90c5eb;
 }
+
 .header-inner {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1em;
+  text-align: center;
 }
+
 .logo {
   height: 70px;
+  margin-bottom: 0.5em;
 }
-.chapter-title h1 {
+
+.chapter-title h1,
+.chapter-title p {
   margin: 0;
 }
+
 nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: #1d3557;
   padding: 0;
   margin: 0;
 }
+
 nav li a {
   display: block;
   padding: 14px;
   color: white;
   text-decoration: none;
 }
+
 .event-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
+
 .event-card {
   background: #fff;
   padding: 10px;
-  width: 300px;
+  width: 100%;
+  max-width: 320px;
   border-radius: 10px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
+
 .event-card img {
   max-width: 100%;
   border-radius: 6px;
 }
+
 .event-flyer {
   max-width: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
 }
-form input, form button {
+
+form input,
+form button {
   padding: 0.5em;
   font-size: 1em;
+  width: 100%;
+  max-width: 400px;
 }
+
 form p {
   margin-bottom: 1em;
 }
-.calendar-list {
-  padding-left: 20px;
-}
+
+.calendar-list,
 .board-list {
-  padding-left: 20px;
-  line-height: 1.6;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+@media (min-width: 600px) {
+  .header-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .chapter-title {
+    text-align: left;
+  }
 }
