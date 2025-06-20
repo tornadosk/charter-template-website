@@ -6,6 +6,9 @@ permalink: /events/index.html
 <h2>Upcoming Events</h2>
 <ul>
   {% for event in events %}
-    <li><strong>{{ event.date | slice(0, 10) }}</strong> - {{ event.name }} at {{ event.location }}</li>
+    <li>
+      <strong>{{ event.date | slice(0, 10) }}</strong> –
+      <a href="/events/{{ event.slug }}">{{ event.title }}</a>
+    </li>
   {% endfor %}
 </ul>

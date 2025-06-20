@@ -29,9 +29,11 @@ collections:
             name: "events"
             widget: "list"
             fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Slug", name: "slug", widget: "string"}
               - {label: "Date", name: "date", widget: "datetime"}
-              - {label: "Name", name: "name", widget: "string"}
               - {label: "Location", name: "location", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
   - name: "board"
     label: "Board"
     files:
