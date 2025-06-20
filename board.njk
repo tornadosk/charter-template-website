@@ -1,0 +1,11 @@
+---
+title: Board Members
+layout: layout.njk
+permalink: /board/index.html
+---
+<h2>Chapter Board</h2>
+<ul>
+  {% for member in board %}
+    <li>{{ member.name }} - {{ member.role }}</li>
+  {% endfor %}
+</ul>

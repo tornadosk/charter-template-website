@@ -13,11 +13,11 @@ collections:
         label: "Chapter Info"
         name: "chapter"
         fields:
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "City", name: "city", widget: "string" }
-          - { label: "State", name: "state", widget: "string" }
-          - { label: "Email", name: "email", widget: "string" }
-          - { label: "Welcome Message", name: "welcomeMessage", widget: "text" }
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "City", name: "city", widget: "string"}
+          - {label: "State", name: "state", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Welcome Message", name: "welcomeMessage", widget: "text"}
   - name: "events"
     label: "Events"
     files:
@@ -29,6 +29,19 @@ collections:
             name: "events"
             widget: "list"
             fields:
-              - { label: "Date", name: "date", widget: "datetime" }
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Location", name: "location", widget: "string" }
+              - {label: "Date", name: "date", widget: "datetime"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Location", name: "location", widget: "string"}
+  - name: "board"
+    label: "Board"
+    files:
+      - file: "content/board.json"
+        label: "Board"
+        name: "board"
+        fields:
+          - label: "Members"
+            name: "members"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Role", name: "role", widget: "string"}
