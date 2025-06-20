@@ -13,24 +13,23 @@ collections:
         label: "Chapter Info"
         name: "chapter"
         fields:
-          - {label: "Name", name: "name", widget: "string"}
-          - {label: "City", name: "city", widget: "string"}
-          - {label: "State", name: "state", widget: "string"}
-          - {label: "Email", name: "email", widget: "string"}
-          - {label: "Welcome Message", name: "welcomeMessage", widget: "text"}
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "City", name: "city", widget: "string" }
+          - { label: "State", name: "state", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Welcome Message", name: "welcomeMessage", widget: "text" }
   - name: "events"
     label: "Events"
     file: "content/events.json"
     label_singular: "Event"
-    name: "events"
     widget: "list"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Location", name: "location", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Image", name: "image", widget: "image"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Image", name: "image", widget: "image" }
   - name: "board"
     label: "Board"
     files:
@@ -42,5 +41,5 @@ collections:
             name: "members"
             widget: "list"
             fields:
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Role", name: "role", widget: "string"}
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
